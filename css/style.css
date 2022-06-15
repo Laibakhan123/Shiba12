@@ -16,6 +16,9 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  background-image: url("https://www.seekpng.com/png/full/12-125629_white-smoke-transparent-smoke-transparent.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 section {
