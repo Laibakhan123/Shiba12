@@ -9,7 +9,7 @@ $pass ="admin";
 if ($username == $user && $password==$pass) {
 session_start();
 $_SESSION['ingelogd'] = true;
-header ("Location: homepage.html");
+header ("Location: ingelogd.php");
 }
 }  else {
 $error= "Username & password zijn verplicht";
