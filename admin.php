@@ -9,7 +9,7 @@ $pass ="admin";
 if ($username == $user && $password==$pass) {
 session_start();
 $_SESSION['ingelogd'] = true;
-header ("Location: ingelogd.php");
+header ("Location: homepage.html");
 }
 }  else {
 $error= "Username & password zijn verplicht";
@@ -69,6 +69,8 @@ $error= "Username & password zijn verplicht";
         <div id="menu-btn" class="fas fa-bars"></div>
         <div id="search-btn" class="fas fa-search"></div>
         <a href="shoppingcart.html" class="fas fa-shopping-cart"></a>
+        <div id = "admin-btn" class="fa fa-user icon"></div>
+        
       </div>
 
       <form action="" class="search-form">
@@ -87,22 +89,22 @@ $error= "Username & password zijn verplicht";
     </section>
 
     <section class="login-form">
-      <form action="">
+      <form action="homepage.html" method="post">
         <h3>user login</h3>
         <div class="inputBox">
           <span class="fas fa-user"></span>
-          <input type="text" name="" placeholder="enter username" id="" />
+          <input type="text" name="username" placeholder="enter username" id="" />
         </div>
         <div class="inputBox">
           <span class="fas fa-lock"></span>
           <input
             type="password"
-            name=""
+            name="password"
             placeholder="enter your password"
             id=""
           />
         </div>
-        <input type="submit" value="sign in" class="btn" />
+        <input type="submit" value="sign in" class="btn" name="submit" />
         <div class="flex">
           <input type="checkbox" name="" id="remember-me" />
           <label for="remember-me">remember me</label>

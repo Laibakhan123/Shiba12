@@ -360,14 +360,13 @@ section {
   -ms-grid-columns: (minmax(32rem, 1fr)) [auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
   gap: 1.5rem;
-
 }
 
 .products .box-container .box {
   border-radius: 0.5rem;
   text-align: center;
   border: 0.2rem solid;
-  background: linear-gradient(45deg , #d3d3d3, #ffff, #f27649, #d3d3d3, #ffff);
+  background: linear-gradient(45deg, #d3d3d3, #ffff, #f27649, #d3d3d3, #ffff);
 }
 
 .products .box-container .box:hover .image .icons {
