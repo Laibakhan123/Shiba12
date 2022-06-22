@@ -156,15 +156,6 @@ $error= "Username & password zijn verplicht";
           <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
           <a href="#"> <i class="fab fa-github"></i> github </a>
         </div>
-
-        <div class="box">
-          <h3>newsletter</h3>
-          <p>subscribe for latest updates</p>
-          <form action="">
-            <input type="email" placeholder="enter your email" />
-            <input type="submit" value="subscribe" class="btn1" />
-          </form>
-        </div>
       </div>
       <div class="copyright">
         copyright <span>SHIBA</span> | all rights reserved
