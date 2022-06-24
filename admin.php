@@ -1,4 +1,8 @@
 <?php
+$connect= new mysqli("localhost" , "root" , "" , "energy");
+if($connect->connect_error){
+  die("connection failed : ".$conn->connect_error);
+}
 $error="";
 if (isset ($_POST['submit'])) {
 if (!empty($_POST [ 'username']) && !empty($_POST['password'])) {
