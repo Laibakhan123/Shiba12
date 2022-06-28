@@ -4,8 +4,9 @@
     die("connection failed : ".$conn->connect_error);
   }
 
-  $artiesten = $connect->query("SELECT artiest_id, naam FROM artiesten");
+  $artiesten = $connect->query("SELECT artiest_id, naam  FROM artiesten");
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -92,11 +93,9 @@
             <div class="content">
               <h3><?php echo $artiest['naam']; ?></h3>
               <p>
-                Lipa werd in 1995 geboren in het Verenigd Koninkrijk. Haar ouders
-                zijn Albanezen die in de jaren 90 gevlucht waren uit Kosovo. In
-                2015 maakte ze haar debuutsingle "New Love". Haar tweede single
-                "Be the One" haalde de hitlijsten in Nederland, België,
-                Zwitserland, Oostenrijk en Bulgarije.
+              
+                
+                
               </p>
               <a href="details.html" class="btn1">read more</a>
               <div class="icons">
